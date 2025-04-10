@@ -5,9 +5,9 @@ export default function Home() {
     <div>
 
 
-        <div className="w-screen h-screen flex">
-            {/* Larger Portion (2/3) */}
-            <div className="w-2/3 h-full relative border-r">
+        <div className="w-screen h-screen relative overflow-hidden">
+            {/* Diagonal Split */}
+            <div className="absolute inset-0" style={{clipPath: "polygon(0 0, 70% 0, 45% 100%, 0 100%)"}}>
                 <Image
                     src="/jahesh.jpg"
                     alt="Larger Portion Image"
@@ -15,8 +15,7 @@ export default function Home() {
                     objectFit="cover"
                 />
             </div>
-            {/* Smaller Portion (1/3) */}
-            <div className="w-1/3 h-full relative">
+            <div className="absolute inset-0" style={{clipPath: "polygon(70% 0, 100% 0, 100% 100%, 45% 100%)"}}>
                 <Image
                     src="/stefan.jpg"
                     alt="Smaller Portion Image"
