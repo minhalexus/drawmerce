@@ -33,7 +33,7 @@ export default function FrameForwardSlash() {
 
     return (
         <div>
-            <div className="w-[90vw] h-[90vh] relative border-[1.7rem] border-black overflow-hidden">
+            <div className="w-[85vw] h-[85vh] relative border-[1.7rem] border-black overflow-hidden">
                 {/* Diagonal Split */}
                 <div className="absolute inset-0 select-none"
                      style={{clipPath: diagonalClipPaths.firstDiv}}>
@@ -52,7 +52,7 @@ export default function FrameForwardSlash() {
                             layout="fill"
                             objectFit="contain"
                             draggable={false}
-                            className="absolute inset-0 translate-x-[-30.5%]"
+                            className="absolute inset-0 translate-x-[-31.8%]"
                         />
                     </div>
                 </div>
@@ -64,7 +64,7 @@ export default function FrameForwardSlash() {
                     style={{
                         clipPath: diagonalClipPaths.blackLineDiv,
                         width: "100%",
-                        height: "88vh",
+                        height: "80vh",
                         zIndex: 1
                     }}
 
@@ -90,7 +90,7 @@ export default function FrameForwardSlash() {
                             layout="fill"
                             objectFit="contain"
                             draggable={false}
-                            className="absolute inset-0 translate-x-[28%]"
+                            className="absolute inset-0 translate-x-[31%]"
                         />
                     </div>
                 </div>

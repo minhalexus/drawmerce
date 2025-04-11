@@ -33,9 +33,9 @@ export default function FrameBackwardSlash() {
 
     return (
         <div>
-            <div className="w-[90vw] h-[90vh] relative border-[0.7rem] border-black overflow-hidden">
+            <div className="w-[85vw] h-[85vh] relative border-[1.7rem] border-black overflow-hidden">
                 {/* Diagonal Split */}
-                <div className="absolute inset-0 border-[0.7rem] border-black select-none"
+                <div className="absolute inset-0 select-none"
                      style={{clipPath: diagonalClipPaths.firstDiv}}>
                     <div className="relative w-full h-full select-none">
                         <Image
@@ -64,7 +64,7 @@ export default function FrameBackwardSlash() {
                     style={{
                         clipPath: diagonalClipPaths.blackLineDiv,
                         width: "100%",
-                        height: "88vh",
+                        height: "80vh",
                         zIndex: 1
                     }}
 
@@ -72,7 +72,7 @@ export default function FrameBackwardSlash() {
                     onMouseDown={ handleSliderChange }
                 ></div>
 
-                <div className="absolute inset-0 border-[0.7rem] border-black select-none"
+                <div className="absolute inset-0 select-none"
                      style={{clipPath: diagonalClipPaths.secondDiv}}>
 
                     <div className="relative w-full h-full select-none">
