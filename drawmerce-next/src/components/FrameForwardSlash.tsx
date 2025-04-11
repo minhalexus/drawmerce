@@ -2,7 +2,7 @@ import React, {MouseEventHandler, useState} from "react";
 import Image from "next/image";
 
 export default function FrameForwardSlash() {
-    const [displacement, setDisplacement] = useState(70); // Slider displacement state
+    const [displacement, setDisplacement] = useState(65); // Slider displacement state
 
     const diagonalClipPaths = {
         firstDiv: `polygon(0 0, ${displacement}% 0, ${displacement - 15}% 100%, 0 100%)`,
@@ -33,9 +33,9 @@ export default function FrameForwardSlash() {
 
     return (
         <div>
-            <div className="w-[90vw] h-[90vh] relative border-[0.7rem] border-black overflow-hidden">
+            <div className="w-[90vw] h-[90vh] relative border-[1.7rem] border-black overflow-hidden">
                 {/* Diagonal Split */}
-                <div className="absolute inset-0 border-[0.7rem] border-black select-none"
+                <div className="absolute inset-0 select-none"
                      style={{clipPath: diagonalClipPaths.firstDiv}}>
                     <div className="relative w-full h-full select-none">
                         <Image
@@ -52,7 +52,7 @@ export default function FrameForwardSlash() {
                             layout="fill"
                             objectFit="contain"
                             draggable={false}
-                            className="absolute inset-0 translate-x-[-23.5%]"
+                            className="absolute inset-0 translate-x-[-30.5%]"
                         />
                     </div>
                 </div>
@@ -72,7 +72,7 @@ export default function FrameForwardSlash() {
                     onMouseDown={ handleSliderChange }
                 ></div>
 
-                <div className="absolute inset-0 border-[0.7rem] border-black select-none"
+                <div className="absolute inset-0 select-none"
                      style={{clipPath: diagonalClipPaths.secondDiv}}>
 
                     <div className="relative w-full h-full select-none">
