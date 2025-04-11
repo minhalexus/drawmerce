@@ -4,10 +4,20 @@ import FrameForwardSlash from "@drawmerce/components/FrameForwardSlash";
 import FrameSingle from "@drawmerce/components/FrameSingle";
 
 interface ContainerProps {
-    variant?: 'FrameForwardSlash' | 'FrameBackwardSlash';
+    variant?: 'FrameForwardSlash' | 'FrameBackwardSlash' | 'FrameSingle';
+    media: string[];
 }
 
-const FrameContainer: React.FC<ContainerProps> = ({variant = 'FrameForwardSlash'}) => {
+const FrameContainer: React.FC<ContainerProps> = ({variant = 'FrameForwardSlash', media}) => {
+    let content;
+    if (variant === 'FrameForwardSlash') {
+        content = <FrameForwardSlash/>;
+    } else if (variant === 'FrameBackwardSlash') {
+        content = <FrameBackwardSlash/>;
+    } else {
+        content = <FrameSingle media={ media }/>;
+    }
+
     return (
         <div
             style={{
@@ -19,13 +29,7 @@ const FrameContainer: React.FC<ContainerProps> = ({variant = 'FrameForwardSlash'
                 alignItems: 'center',
             }}
         >
-            {variant === 'FrameForwardSlash' ? (
-                <FrameForwardSlash/>
-            ) : variant === 'FrameBackwardSlash' ? (
-                <FrameBackwardSlash/>
-            ) : (
-                <FrameSingle/>
-            )}
+            {content}
         </div>
     );
 };
