@@ -27,7 +27,7 @@ export default function FrameCover({media}: FrameCoverProps) {
                         className=""
                     />
                     {/* Centered Heading */}
-                    <h1 className="absolute inset-0 flex items-center justify-center text-white text-4xl font-serif italic">
+                    <h1 className="absolute inset-0 flex items-center justify-center text-white text-4xl italic font-bold">
                         Minhal's Muse
                     </h1>
                 </div>
