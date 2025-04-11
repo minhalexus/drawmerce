@@ -22,7 +22,7 @@ const FrameContainer: React.FC<ContainerProps> = ({variant = 'FrameForwardSlash'
     }
 
     return (
-        <div
+        <section
             style={{
                 width: '100vw',
                 height: '100vh',
@@ -33,7 +33,7 @@ const FrameContainer: React.FC<ContainerProps> = ({variant = 'FrameForwardSlash'
             }}
         >
             {content}
-        </div>
+        </section>
     );
 };
 

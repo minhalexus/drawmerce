@@ -19,15 +19,41 @@ export default function BoardPage() {
             <FrameContainer variant='FrameBackwardSlash' media={["/cover.jpg"]}/>
 
             <div className="fixed top-1/2 right-10 flex flex-col items-center space-y-4 transform -translate-y-1/2">
-                <button className="p-2 bg-gray-300 rounded-full hover:bg-gray-300 cursor-pointer">
-                    <span className="h-5 w-5">
-                        <ArrowUpIcon className="h-5 w-5"/>
-                    </span>
+                <button
+                    onClick={() => {
+                        const sections = document.querySelectorAll('section');
+                        const currentScroll = window.scrollY;
+                        const previousSection = Array.from(sections).reverse().find((section) => {
+                            const rect = section.getBoundingClientRect();
+                            return rect.top + window.scrollY < currentScroll;
+                        });
+                        if (previousSection) {
+                            previousSection.scrollIntoView({behavior: 'smooth'});
+                        }
+                    }}
+                    className="p-2 bg-gray-300 rounded-full hover:bg-gray-300 cursor-pointer"
+                >
+        <span className="h-5 w-5">
+            <ArrowUpIcon className="h-5 w-5"/>
+        </span>
                 </button>
-                <button className="p-2 bg-gray-300 rounded-full hover:bg-gray-300 cursor-pointer">
-                    <span className="h-5 w-5">
-                        <ArrowDownIcon className="h-5 w-5"/>
-                    </span>
+                <button
+                    onClick={() => {
+                        const sections = document.querySelectorAll('section');
+                        const currentScroll = window.scrollY;
+                        const nextSection = Array.from(sections).find((section) => {
+                            const rect = section.getBoundingClientRect();
+                            return rect.top + window.scrollY > currentScroll;
+                        });
+                        if (nextSection) {
+                            nextSection.scrollIntoView({behavior: 'smooth'});
+                        }
+                    }}
+                    className="p-2 bg-gray-300 rounded-full hover:bg-gray-300 cursor-pointer"
+                >
+        <span className="h-5 w-5">
+            <ArrowDownIcon className="h-5 w-5"/>
+        </span>
                 </button>
             </div>
         </div>
