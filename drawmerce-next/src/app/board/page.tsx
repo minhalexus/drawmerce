@@ -8,6 +8,7 @@ import FrameContainer from "@drawmerce/components/FrameContainer";
 export default function BoardPage() {
     return(
         <div className="overflow-x-hidden">
+            <FrameContainer variant='FrameSingle' />
             <FrameContainer variant='FrameForwardSlash' />
 
             <FrameContainer variant='FrameBackwardSlash' />
