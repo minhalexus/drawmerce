@@ -9,7 +9,7 @@ export default function BoardPage() {
     return(
         <div className="overflow-x-hidden">
             <FrameContainer
-                variant='FrameSingle'
+                variant='FrameCover'
                 media={ ["/cover.jpg"] }
             />
             <FrameContainer variant='FrameSingle' media={ ["/babu.jpg"] } />
