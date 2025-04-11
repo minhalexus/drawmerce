@@ -1,9 +1,12 @@
 import React, {MouseEventHandler, useState} from "react";
 import Image from "next/image";
 
-export default function FrameBackwardSlash() {
-    const [displacement, setDisplacement] = useState(65); // Slider displacement state
+interface FrameBackwardSlashProps {
+    displacement: number;
+    setDisplacement: (displacement: number) => void;
+}
 
+export default function FrameBackwardSlash({ displacement, setDisplacement }: FrameBackwardSlashProps) {
     const diagonalClipPaths = {
         firstDiv: `polygon(${100 - displacement}% 0, 100% 0, 100% 100%, ${115 - displacement}% 100%)`,
         blackLineDiv: `polygon(${100 - displacement}% 0, ${99.5 - displacement}% 0, ${114.5 - displacement}% 100%, ${115 - displacement}% 100%)`,

@@ -6,6 +6,7 @@ import FrameBackwardSlash from "@drawmerce/components/FrameBackwardSlash";
 import FrameContainer from "@drawmerce/components/FrameContainer";
 import {ArrowDownIcon, ArrowUpIcon} from "@heroicons/react/16/solid";
 
+
 export default function BoardPage() {
     return (
         <div className="overflow-x-hidden relative">
@@ -31,7 +32,7 @@ export default function BoardPage() {
                             previousSection.scrollIntoView({behavior: 'smooth'});
                         }
                     }}
-                    className="p-2 bg-gray-300 rounded-full hover:bg-gray-300 cursor-pointer"
+                    className="p-2 bg-[#a0a4aa] rounded-full hover:bg-gray-200 cursor-pointer"
                 >
         <span className="h-5 w-5">
             <ArrowUpIcon className="h-5 w-5"/>
@@ -49,11 +50,11 @@ export default function BoardPage() {
                             nextSection.scrollIntoView({behavior: 'smooth'});
                         }
                     }}
-                    className="p-2 bg-gray-300 rounded-full hover:bg-gray-300 cursor-pointer"
+                    className="p-2 bg-[#a0a4aa] rounded-full hover:bg-gray-200 cursor-pointer"
                 >
-        <span className="h-5 w-5">
-            <ArrowDownIcon className="h-5 w-5"/>
-        </span>
+                    <span className="h-5 w-5">
+                        <ArrowDownIcon className="h-5 w-5"/>
+                    </span>
                 </button>
             </div>
         </div>
