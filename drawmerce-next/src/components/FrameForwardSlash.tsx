@@ -48,7 +48,7 @@ export default function FrameForwardSlash({ displacement, setDisplacement }: Fra
                             layout="fill"
                             objectFit="cover"
                             draggable={false}
-                            className="blur-md select-none"
+                            className="blur-sm select-none"
                         />
                         <Image
                             src="/jahesh.jpg"
@@ -86,7 +86,7 @@ export default function FrameForwardSlash({ displacement, setDisplacement }: Fra
                             layout="fill"
                             objectFit="cover"
                             draggable={false}
-                            className="blur-md select-none"
+                            className="blur-sm select-none"
                         />
                         <Image
                             src="/stefan.jpg"
