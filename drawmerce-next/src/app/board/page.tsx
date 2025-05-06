@@ -8,8 +8,26 @@ import {ArrowDownIcon, ArrowUpIcon} from "@heroicons/react/16/solid";
 
 
 export default function BoardPage() {
+    // const handleLogin = async () => {
+    //     try {
+    //         // Gets authentication url from backend server
+    //         const {
+    //             data: { url },
+    //         } = await fetch.get(`${serverUrl}/auth/url`)
+    //         // Navigate to consent screen
+    //         window.location.assign(url)
+    //     } catch (err) {
+    //         console.error(err)
+    //     }
+    // }
+
     return (
         <div className="overflow-x-hidden relative">
+            <div>
+                <button>
+                    Login with Google
+                </button>
+            </div>
             <FrameContainer
                 variant='FrameCover'
                 media={["/cover.jpg"]}
