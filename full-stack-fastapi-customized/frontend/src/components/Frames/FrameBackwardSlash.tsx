@@ -94,7 +94,7 @@ export default function FrameBackwardSlash({ displacement, setDisplacement }: Fr
                             layout="fill"
                             objectFit="contain"
                             draggable={false}
-                            className="absolute inset-0 translate-x-[-30.5%]"
+                            className="absolute inset-0 translate-x-[-30.5%] layout-[fill]"
                         />
                     </div>
                 </div>
