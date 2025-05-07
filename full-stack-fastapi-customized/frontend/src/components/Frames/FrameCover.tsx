@@ -10,14 +10,14 @@ export default function FrameCover({media}: FrameCoverProps) {
             <div className="w-[85vw] h-[85vh] relative border-[1.7rem] border-black overflow-hidden">
                 {/* Diagonal Split */}
                 <div className="relative w-full h-full select-none">
-                    <Image
+                    {/* <Image
                         src={media[0]}
                         alt="Larger Portion Image"
                         // layout="fill"
                         objectFit="cover"
                         draggable={false}
                         className="blur-md select-none"
-                    />
+                    /> */}
                     <Image
                         src={media[0]}
                         alt="Larger Portion Image"
