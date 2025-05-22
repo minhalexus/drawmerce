@@ -1,4 +1,3 @@
-import React, {MouseEventHandler, useState} from "react";
 import { Image } from "@chakra-ui/react";
 
 interface FrameForwardSlashProps {
@@ -14,7 +13,7 @@ export default function FrameForwardSlash({ displacement, setDisplacement }: Fra
         secondDiv: `polygon(${displacement}% 0, 100% 0, 100% 100%, ${displacement - 15}% 100%)`,
     };
 
-    const handleSliderChange = (event: MouseEventHandler<HTMLDivElement>) => {
+    const handleSliderChange = () => {
         const onMouseMove = (moveEvent: MouseEvent) => {
             const maxDisplacement = 113;
             const minDisplacement = 7;
@@ -37,15 +36,14 @@ export default function FrameForwardSlash({ displacement, setDisplacement }: Fra
 
     return (
         <div>
-            <div className="w-[85vw] h-[85vh] relative border-[1.7rem] border-black overflow-hidden">
-                {/* Diagonal Split */}
+            <div className="w-[85vw] h-[85vh] relative !border-[1.7rem] !border-black overflow-hidden rounded-md">
+            {/* Diagonal Split */}
                 <div className="absolute inset-0 select-none"
                      style={{clipPath: diagonalClipPaths.firstDiv}}>
                     <div className="relative w-full h-full select-none">
                         <Image
                             src="/jahesh.jpg"
                             alt="Larger Portion Image"
-                            layout="fill"
                             objectFit="cover"
                             draggable={false}
                             className="blur-sm select-none"
@@ -53,7 +51,6 @@ export default function FrameForwardSlash({ displacement, setDisplacement }: Fra
                         <Image
                             src="/jahesh.jpg"
                             alt="Larger Portion Image"
-                            layout="fill"
                             objectFit="contain"
                             draggable={false}
                             className="absolute inset-0 translate-x-[-31.8%]"
@@ -83,7 +80,6 @@ export default function FrameForwardSlash({ displacement, setDisplacement }: Fra
                         <Image
                             src="/stefan.jpg"
                             alt="Smaller Portion Image"
-                            layout="fill"
                             objectFit="cover"
                             draggable={false}
                             className="blur-sm select-none"
@@ -91,7 +87,6 @@ export default function FrameForwardSlash({ displacement, setDisplacement }: Fra
                         <Image
                             src="/stefan.jpg"
                             alt="Smaller Portion Image"
-                            layout="fill"
                             objectFit="contain"
                             draggable={false}
                             className="absolute inset-0 translate-x-[31%]"

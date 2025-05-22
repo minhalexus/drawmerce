@@ -17,7 +17,6 @@ const HomePageList: React.FC<HomePageListProps> = (props) => {
                     <Image
                         src="/jahesh.jpg"
                         alt="Larger Portion Image"
-                        layout="fill"
                         objectFit="cover"
                     />
                 </div>
@@ -37,7 +36,6 @@ const HomePageList: React.FC<HomePageListProps> = (props) => {
                     <Image
                         src="/stefan.jpg"
                         alt="Smaller Portion Image"
-                        layout="fill"
                         objectFit="cover"
                     />
                 </div>

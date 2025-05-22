@@ -1,4 +1,3 @@
-import React, {MouseEventHandler, useState} from "react";
 import { Image } from "@chakra-ui/react";
 
 interface FrameBackwardSlashProps {
@@ -13,7 +12,7 @@ export default function FrameBackwardSlash({ displacement, setDisplacement }: Fr
         secondDiv: `polygon(0 0, ${100 - displacement}% 0, ${115 - displacement}% 100%, 0 100%)`,
     };
 
-    const handleSliderChange = (event: MouseEventHandler<HTMLDivElement>) => {
+    const handleSliderChange = () => {
         const onMouseMove = (moveEvent: MouseEvent) => {
             const maxDisplacement = 113;
             const minDisplacement = 7;
@@ -36,26 +35,26 @@ export default function FrameBackwardSlash({ displacement, setDisplacement }: Fr
 
     return (
         <div>
-            <div className="w-[85vw] h-[85vh] relative border-[1.7rem] border-black overflow-hidden">
+            <div className="w-[85vw] h-[85vh] relative !border-[1.7rem] !border-black overflow-hidden rounded-md">
                 {/* Diagonal Split */}
                 <div className="absolute inset-0 select-none"
                      style={{clipPath: diagonalClipPaths.firstDiv}}>
                     <div className="relative w-full h-full select-none">
-                        <Image
-                            src="/minhal.jpg"
-                            alt="Smaller Portion Image"
-                            layout="fill"
+                        <Image src="/minhal.jpg"
+                            alt="Larger Portion Image"
+                            w="100%"
+                            h="100%"
                             objectFit="cover"
                             draggable={false}
-                            className="blur-md select-none"
-                        />
+                            className="blur-md select-none">
+                        </Image>
                         <Image
                             src="/minhal.jpg"
                             alt="Smaller Portion Image"
-                            layout="fill"
+                            h="100%"
                             objectFit="contain"
                             draggable={false}
-                            className="absolute inset-0 translate-x-[28%]"
+                            className="absolute inset-0 translate-x-[80%]"
                         />
                     </div>
                 </div>
@@ -79,22 +78,21 @@ export default function FrameBackwardSlash({ displacement, setDisplacement }: Fr
                      style={{clipPath: diagonalClipPaths.secondDiv}}>
 
                     <div className="relative w-full h-full select-none">
-
-                        <Image
-                            src="/ogi.jpg"
+                        <Image src="/ogi.jpg"
                             alt="Larger Portion Image"
-                            layout="fill"
+                            w="100%"
+                            h="100%"
                             objectFit="cover"
                             draggable={false}
-                            className="blur-md select-none"
-                        />
+                            className="blur-md select-none">
+                        </Image>
                         <Image
                             src="/ogi.jpg"
                             alt="Larger Portion Image"
-                            layout="fill"
+                            h="100%"
                             objectFit="contain"
                             draggable={false}
-                            className="absolute inset-0 translate-x-[-30.5%] layout-[fill]"
+                            className="absolute inset-0 translate-x-[-0.5%] layout-[fill]"
                         />
                     </div>
                 </div>

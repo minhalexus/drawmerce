@@ -25,6 +25,7 @@ const FrameContainer: React.FC<ContainerProps> = ({variant = 'FrameForwardSlash'
     }
 
     const handleChange = (event: Event, newValue: number | number[]) => {
+        event.preventDefault();
         setDisplacement(newValue as number);
     };
 

@@ -7,28 +7,26 @@ interface FrameCoverProps {
 export default function FrameCover({media}: FrameCoverProps) {
     return (
         <div>
-            <div className="w-[85vw] h-[85vh] relative border-[1.7rem] border-black overflow-hidden border-solid">
+            <div className="w-[85vw] h-[85vh] relative !border-[1.7rem] !border-black overflow-hidden rounded-md">
                 {/* Diagonal Split */}
                 <div className="relative w-full h-full select-none">
-                    hello
-                    {/* <Image
-                        src={media[0]}
+                    <Image src={media[0]}
                         alt="Larger Portion Image"
-                        // layout="fill"
+                        w="100%"
+                        h="100%"
                         objectFit="cover"
                         draggable={false}
-                        className="blur-md select-none"
-                    /> */}
-                    {/* <Image
+                        className="blur-md select-none">
+                    </Image>
+                    <Image
                         src={media[0]}
                         alt="Larger Portion Image"
-                        // layout="fill"
-                        objectFit="contain"
+                        h="100%"
                         draggable={false}
-                        className=""
-                    /> */}
+                        className="select-none absolute inset-0 translate-x-[42%]"
+                    />
                     {/* Centered Heading */}
-                    <h1 className="absolute inset-0 flex items-center justify-center text-white text-4xl italic font-bold">
+                    <h1 className="absolute inset-0 flex items-center justify-center text-white !text-4xl !italic !font-bold">
                         Minhal's Muse
                     </h1>
                 </div>

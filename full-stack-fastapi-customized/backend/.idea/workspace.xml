@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b4f94e0-7f4b-439e-a8d9-5353bf4ab25c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/app/api/routes/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/routes/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Frames/FrameBackwardSlash.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/Frames/FrameBackwardSlash.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Frames/FrameCover.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/Frames/FrameCover.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Frames/FrameForwardSlash.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/Frames/FrameForwardSlash.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Frames/FrameSingle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/Frames/FrameSingle.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,29 +19,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2wjfOxyka81lr0rL1HsqYNe4gSV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for test_login.test_use_access_token.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "integrate-backend",
-    "last_opened_file_path": "/Users/minmac/workspace/minhal-draws/full-stack-fastapi-customized/backend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_login.test_use_access_token.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;integrate-backend&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/minmac/workspace/minhal-draws/full-stack-fastapi-customized/backend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Python tests for test_login.test_use_access_token" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="backend" />
@@ -79,6 +82,8 @@
       <option name="presentableId" value="Default" />
       <updated>1746559875187</updated>
       <workItem from="1746559876277" duration="11772000" />
+      <workItem from="1746909380651" duration="599000" />
+      <workItem from="1747933288159" duration="646000" />
     </task>
     <servers />
   </component>
